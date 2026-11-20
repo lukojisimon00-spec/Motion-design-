@@ -1,0 +1,20 @@
+{
+  "fps": 30,
+  "durationInFrames": 600,
+  "scenes": {
+    "clock": { "from": 0, "duration": 128 },
+    "flow": { "from": 120, "duration": 128 },
+    "build": { "from": 240, "duration": 188 },
+    "final": { "from": 420, "duration": 180 }
+  },
+  "text": {
+    "clock": 34,
+    "flowA": 24,
+    "flowB": 40,
+    "buildA": 26,
+    "buildB": 50,
+    "buildC": 74,
+    "finalA": 24,
+    "finalB": 80
+  }
+}
