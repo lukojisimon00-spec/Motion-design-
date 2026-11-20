@@ -1,0 +1,307 @@
+{
+  "personnage": "KIMO",
+  "rotation": [
+    {
+      "nom": "01-face",
+      "src": "/characters/kimo/reference/rotation/01-face.png",
+      "w": 203,
+      "h": 590
+    },
+    {
+      "nom": "02-trois-quarts",
+      "src": "/characters/kimo/reference/rotation/02-trois-quarts.png",
+      "w": 181,
+      "h": 597
+    },
+    {
+      "nom": "03-profil",
+      "src": "/characters/kimo/reference/rotation/03-profil.png",
+      "w": 139,
+      "h": 586
+    },
+    {
+      "nom": "04-profil-trois-quarts",
+      "src": "/characters/kimo/reference/rotation/04-profil-trois-quarts.png",
+      "w": 139,
+      "h": 586
+    },
+    {
+      "nom": "05-dos",
+      "src": "/characters/kimo/reference/rotation/05-dos.png",
+      "w": 203,
+      "h": 586
+    },
+    {
+      "nom": "06-decontracte",
+      "src": "/characters/kimo/reference/rotation/06-decontracte.png",
+      "w": 211,
+      "h": 596
+    }
+  ],
+  "poses": [
+    {
+      "nom": "accroupi-elan",
+      "src": "/characters/kimo/poses/accroupi-elan.png",
+      "w": 217,
+      "h": 280
+    },
+    {
+      "nom": "assis-explique",
+      "src": "/characters/kimo/poses/assis-explique.png",
+      "w": 214,
+      "h": 340
+    },
+    {
+      "nom": "assis",
+      "src": "/characters/kimo/poses/assis.png",
+      "w": 197,
+      "h": 333
+    },
+    {
+      "nom": "bras-croises",
+      "src": "/characters/kimo/poses/bras-croises.png",
+      "w": 131,
+      "h": 358
+    },
+    {
+      "nom": "celebration",
+      "src": "/characters/kimo/poses/celebration.png",
+      "w": 256,
+      "h": 360
+    },
+    {
+      "nom": "course",
+      "src": "/characters/kimo/poses/course.png",
+      "w": 261,
+      "h": 322
+    },
+    {
+      "nom": "debout",
+      "src": "/characters/kimo/poses/debout.png",
+      "w": 133,
+      "h": 362
+    },
+    {
+      "nom": "marche",
+      "src": "/characters/kimo/poses/marche.png",
+      "w": 188,
+      "h": 354
+    },
+    {
+      "nom": "panique-mains-tete",
+      "src": "/characters/kimo/poses/panique-mains-tete.png",
+      "w": 178,
+      "h": 352
+    },
+    {
+      "nom": "pointe-du-doigt",
+      "src": "/characters/kimo/poses/pointe-du-doigt.png",
+      "w": 228,
+      "h": 358
+    },
+    {
+      "nom": "recul-surpris",
+      "src": "/characters/kimo/poses/recul-surpris.png",
+      "w": 241,
+      "h": 334
+    },
+    {
+      "nom": "saut-victoire",
+      "src": "/characters/kimo/poses/saut-victoire.png",
+      "w": 205,
+      "h": 312
+    }
+  ],
+  "expressions": {
+    "a": [
+      {
+        "nom": "choc",
+        "src": "/characters/kimo/expressions/a/choc.png",
+        "w": 195,
+        "h": 262
+      },
+      {
+        "nom": "colere",
+        "src": "/characters/kimo/expressions/a/colere.png",
+        "w": 196,
+        "h": 256
+      },
+      {
+        "nom": "doute",
+        "src": "/characters/kimo/expressions/a/doute.png",
+        "w": 193,
+        "h": 268
+      },
+      {
+        "nom": "epuise",
+        "src": "/characters/kimo/expressions/a/epuise.png",
+        "w": 195,
+        "h": 268
+      },
+      {
+        "nom": "mefiant",
+        "src": "/characters/kimo/expressions/a/mefiant.png",
+        "w": 194,
+        "h": 268
+      },
+      {
+        "nom": "neutre",
+        "src": "/characters/kimo/expressions/a/neutre.png",
+        "w": 190,
+        "h": 264
+      },
+      {
+        "nom": "peur-sueur",
+        "src": "/characters/kimo/expressions/a/peur-sueur.png",
+        "w": 196,
+        "h": 268
+      },
+      {
+        "nom": "pleure",
+        "src": "/characters/kimo/expressions/a/pleure.png",
+        "w": 199,
+        "h": 268
+      },
+      {
+        "nom": "rire-larmes",
+        "src": "/characters/kimo/expressions/a/rire-larmes.png",
+        "w": 195,
+        "h": 264
+      },
+      {
+        "nom": "satisfait",
+        "src": "/characters/kimo/expressions/a/satisfait.png",
+        "w": 190,
+        "h": 269
+      },
+      {
+        "nom": "sourire",
+        "src": "/characters/kimo/expressions/a/sourire.png",
+        "w": 191,
+        "h": 260
+      },
+      {
+        "nom": "triste",
+        "src": "/characters/kimo/expressions/a/triste.png",
+        "w": 196,
+        "h": 268
+      }
+    ],
+    "b": [
+      {
+        "nom": "blase",
+        "src": "/characters/kimo/expressions/b/blase.png",
+        "w": 183,
+        "h": 274
+      },
+      {
+        "nom": "colere",
+        "src": "/characters/kimo/expressions/b/colere.png",
+        "w": 184,
+        "h": 274
+      },
+      {
+        "nom": "etonne",
+        "src": "/characters/kimo/expressions/b/etonne.png",
+        "w": 184,
+        "h": 274
+      },
+      {
+        "nom": "fatigue",
+        "src": "/characters/kimo/expressions/b/fatigue.png",
+        "w": 184,
+        "h": 262
+      },
+      {
+        "nom": "fier",
+        "src": "/characters/kimo/expressions/b/fier.png",
+        "w": 198,
+        "h": 265
+      },
+      {
+        "nom": "horrifie",
+        "src": "/characters/kimo/expressions/b/horrifie.png",
+        "w": 183,
+        "h": 274
+      },
+      {
+        "nom": "inquiet",
+        "src": "/characters/kimo/expressions/b/inquiet.png",
+        "w": 183,
+        "h": 256
+      },
+      {
+        "nom": "neutre",
+        "src": "/characters/kimo/expressions/b/neutre.png",
+        "w": 182,
+        "h": 256
+      },
+      {
+        "nom": "panique",
+        "src": "/characters/kimo/expressions/b/panique.png",
+        "w": 184,
+        "h": 262
+      },
+      {
+        "nom": "pleure",
+        "src": "/characters/kimo/expressions/b/pleure.png",
+        "w": 184,
+        "h": 262
+      },
+      {
+        "nom": "reflexion",
+        "src": "/characters/kimo/expressions/b/reflexion.png",
+        "w": 184,
+        "h": 274
+      },
+      {
+        "nom": "rire",
+        "src": "/characters/kimo/expressions/b/rire.png",
+        "w": 182,
+        "h": 257
+      },
+      {
+        "nom": "serein",
+        "src": "/characters/kimo/expressions/b/serein.png",
+        "w": 182,
+        "h": 256
+      },
+      {
+        "nom": "sourire",
+        "src": "/characters/kimo/expressions/b/sourire.png",
+        "w": 183,
+        "h": 256
+      },
+      {
+        "nom": "stress-mains-tete",
+        "src": "/characters/kimo/expressions/b/stress-mains-tete.png",
+        "w": 245,
+        "h": 259
+      },
+      {
+        "nom": "surpris-sueur",
+        "src": "/characters/kimo/expressions/b/surpris-sueur.png",
+        "w": 183,
+        "h": 256
+      },
+      {
+        "nom": "triste",
+        "src": "/characters/kimo/expressions/b/triste.png",
+        "w": 183,
+        "h": 262
+      },
+      {
+        "nom": "yeux-au-ciel",
+        "src": "/characters/kimo/expressions/b/yeux-au-ciel.png",
+        "w": 184,
+        "h": 262
+      }
+    ]
+  },
+  "planches": [
+    "/characters/kimo/reference/planche-expressions-a.jpg",
+    "/characters/kimo/reference/planche-expressions-b.jpg",
+    "/characters/kimo/reference/planche-poses.jpg",
+    "/characters/kimo/reference/planche-rotation.jpg"
+  ]
+}

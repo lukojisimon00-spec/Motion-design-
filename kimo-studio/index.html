@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KIMO Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@125,900&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <header>
+    <h1>KIMO <span>STUDIO</span></h1>
+    <p class="tag">PERSONNAGE · POSES · EXPRESSIONS</p>
+  </header>
+  <nav id="onglets"></nav>
+  <main>
+    <section id="grille"></section>
+    <aside id="apercu">
+      <div class="scene"><img id="apercu-img" alt="" /></div>
+      <p id="apercu-nom" class="tag"></p>
+      <code id="apercu-src"></code>
+      <div class="fonds">
+        <button data-fond="clair">CLAIR</button>
+        <button data-fond="sombre">SOMBRE</button>
+        <button data-fond="damier">DAMIER</button>
+      </div>
+    </aside>
+  </main>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
