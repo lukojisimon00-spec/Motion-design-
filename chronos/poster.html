@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>CHRONOS</title>
+<style>
+  @font-face { font-family: "Instrument Serif"; src: url("fonts/InstrumentSerif-Regular.ttf"); font-style: normal; }
+  @font-face { font-family: "Instrument Serif"; src: url("fonts/InstrumentSerif-Italic.ttf"); font-style: italic; }
+  @font-face { font-family: "Instrument Sans"; src: url("fonts/InstrumentSans-Regular.ttf"); }
+  @font-face { font-family: "Italiana"; src: url("fonts/Italiana-Regular.ttf"); }
+
+  :root {
+    --ink: #16161a;        /* near-black, a hint of the dial's navy */
+    --ink-soft: #3b352f;   /* warm umber for the tagline */
+    --ink-mute: #5b5249;   /* call to action */
+    --m: 84px;             /* outer margin: one module of the 12-col grid */
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1080px; height: 1350px; background: #e4ddd2; }
+  .poster {
+    position: relative; width: 1080px; height: 1350px; overflow: hidden;
+    background: url("BG") center / cover no-repeat;
+    -webkit-font-smoothing: antialiased;
+    font-kerning: normal;
+    font-feature-settings: "kern", "liga";
+  }
+  .brand {
+    position: absolute; left: var(--m); top: 86px;
+    font-family: "Italiana", serif; font-size: 31px; line-height: 1;
+    letter-spacing: 0.56em; color: var(--ink);
+  }
+  .headline {
+    position: absolute; left: calc(var(--m) - 5px); top: 232px;
+    font-family: "Instrument Serif", serif; font-weight: 400;
+    font-size: 102px; line-height: 1.07; letter-spacing: -0.004em;
+    color: var(--ink);
+  }
+  .headline span { display: block; }
+  .tagline {
+    position: absolute; left: var(--m); top: 492px;
+    font-family: "Instrument Serif", serif; font-style: italic;
+    font-size: 33px; line-height: 1.2; color: var(--ink-soft);
+  }
+  .cta {
+    position: absolute; left: var(--m); top: 566px;
+    font-family: "Instrument Sans", sans-serif; font-size: 13.5px;
+    letter-spacing: 0.26em; line-height: 1.9; text-transform: uppercase;
+    color: var(--ink-mute);
+  }
+</style>
+</head>
+<body>
+  <div class="poster">
+    <div class="brand">CHRONOS</div>
+    <h1 class="headline"><span>VOTRE TEMPS.</span><span>VOTRE HÉRITAGE.</span></h1>
+    <p class="tagline">L’élégance de chaque seconde.</p>
+    <p class="cta">Découvrez notre nouvelle collection.</p>
+  </div>
+</body>
+</html>
