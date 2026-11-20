@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+  <defs>
+    <linearGradient id="ciel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8fd3f4"/><stop offset="1" stop-color="#f9e7c4"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1920" fill="url(#ciel)"/>
+  <circle cx="830" cy="330" r="110" fill="#ffd95a"/>
+  <g fill="#ffffff" opacity="0.9">
+    <ellipse cx="220" cy="300" rx="120" ry="40"/><ellipse cx="300" cy="270" rx="90" ry="50"/>
+    <ellipse cx="640" cy="520" rx="100" ry="32"/><ellipse cx="700" cy="500" rx="70" ry="40"/>
+  </g>
+  <!-- immeubles au loin -->
+  <g fill="#c9b8a6">
+    <rect x="-20" y="820" width="240" height="560"/><rect x="230" y="900" width="180" height="480"/>
+    <rect x="420" y="760" width="230" height="620"/><rect x="660" y="880" width="200" height="500"/>
+    <rect x="870" y="800" width="240" height="580"/>
+  </g>
+  <g fill="#a99886">
+    <rect x="30" y="880" width="40" height="50"/><rect x="110" y="880" width="40" height="50"/>
+    <rect x="30" y="980" width="40" height="50"/><rect x="110" y="980" width="40" height="50"/>
+    <rect x="470" y="820" width="40" height="50"/><rect x="560" y="820" width="40" height="50"/>
+    <rect x="470" y="920" width="40" height="50"/><rect x="560" y="920" width="40" height="50"/>
+    <rect x="920" y="860" width="40" height="50"/><rect x="1010" y="860" width="40" height="50"/>
+    <rect x="920" y="960" width="40" height="50"/><rect x="1010" y="960" width="40" height="50"/>
+  </g>
+  <!-- boutiques au premier plan -->
+  <rect x="0" y="1060" width="520" height="420" fill="#e8a75d" stroke="#2b2118" stroke-width="6"/>
+  <rect x="40" y="1100" width="440" height="80" fill="#2f6f8f" stroke="#2b2118" stroke-width="6"/>
+  <rect x="60" y="1230" width="180" height="250" fill="#5a3b24" stroke="#2b2118" stroke-width="6"/>
+  <rect x="280" y="1230" width="180" height="150" fill="#bfe3f0" stroke="#2b2118" stroke-width="6"/>
+  <rect x="560" y="1000" width="520" height="480" fill="#f2d16b" stroke="#2b2118" stroke-width="6"/>
+  <polygon points="540,1000 1100,1000 1080,1080 560,1080" fill="#c4442f" stroke="#2b2118" stroke-width="6"/>
+  <rect x="610" y="1150" width="200" height="180" fill="#bfe3f0" stroke="#2b2118" stroke-width="6"/>
+  <rect x="850" y="1170" width="170" height="310" fill="#7a4a2a" stroke="#2b2118" stroke-width="6"/>
+  <!-- trottoir et route -->
+  <rect x="0" y="1480" width="1080" height="200" fill="#d8d2c4" stroke="#2b2118" stroke-width="6"/>
+  <rect x="0" y="1680" width="1080" height="240" fill="#4a4a4f"/>
+  <g fill="#f4f1e8"><rect x="40" y="1790" width="160" height="22"/><rect x="320" y="1790" width="160" height="22"/><rect x="600" y="1790" width="160" height="22"/><rect x="880" y="1790" width="160" height="22"/></g>
+</svg>

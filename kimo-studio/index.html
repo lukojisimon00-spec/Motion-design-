@@ -2,31 +2,130 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0b0b0b" />
   <title>KIMO Studio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@125,900&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/src/style.css" />
+  <link rel="stylesheet" href="src/ui/studio.css" />
 </head>
 <body>
-  <header>
+  <header class="topbar">
     <h1>KIMO <span>STUDIO</span></h1>
-    <p class="tag">PERSONNAGE · POSES · EXPRESSIONS</p>
+    <p id="episode-title" class="label">Chargement…</p>
   </header>
-  <nav id="onglets"></nav>
-  <main>
-    <section id="grille"></section>
-    <aside id="apercu">
-      <div class="scene"><img id="apercu-img" alt="" /></div>
-      <p id="apercu-nom" class="tag"></p>
-      <code id="apercu-src"></code>
-      <div class="fonds">
-        <button data-fond="clair">CLAIR</button>
-        <button data-fond="sombre">SOMBRE</button>
-        <button data-fond="damier">DAMIER</button>
+
+  <main class="layout">
+    <section class="stage">
+      <div class="frame">
+        <canvas id="scene" aria-label="Aperçu de la scène"></canvas>
+        <div id="rec-badge" hidden>● REC</div>
       </div>
-    </aside>
+    </section>
+
+    <section class="transport" aria-label="Lecture">
+      <div class="buttons">
+        <button id="btn-play" class="primary">▶ Play</button>
+        <button id="btn-pause">❚❚ Pause</button>
+        <button id="btn-reset">↺ Reset</button>
+        <button id="btn-rec" class="rec">● Rec</button>
+      </div>
+      <input id="seek" type="range" min="0" max="1" step="0.01" value="0" aria-label="Position" />
+      <div class="timeinfo">
+        <span id="time">0.0 / 0.0 s</span>
+        <span id="scene-name" class="label"></span>
+      </div>
+    </section>
+
+    <section class="panel">
+      <nav class="tabs" role="tablist">
+        <button data-tab="scenes" class="active">Scènes</button>
+        <button data-tab="assets">Assets</button>
+        <button data-tab="audio">Audio</button>
+        <button data-tab="settings">Réglages</button>
+      </nav>
+
+      <div id="tab-scenes" class="tab active">
+        <ol id="scene-list" class="list"></ol>
+        <h3>Action à la position actuelle</h3>
+        <div class="form-row">
+          <select id="qa-type">
+            <option value="expression">Expression</option>
+            <option value="pose">Pose</option>
+            <option value="face">Orientation</option>
+            <option value="jump">Saut</option>
+            <option value="squash">Rebond</option>
+            <option value="shake">Tremblement</option>
+            <option value="cameraShake">Secousse caméra</option>
+          </select>
+          <select id="qa-value"></select>
+          <button id="qa-add" class="primary">Ajouter</button>
+        </div>
+        <ul id="action-list" class="list compact"></ul>
+      </div>
+
+      <div id="tab-assets" class="tab">
+        <p id="asset-counts" class="label"></p>
+        <h3>Importer une image</h3>
+        <div class="form-row">
+          <select id="imp-kind">
+            <option value="background">Décor</option>
+            <option value="pose">Pose (corps entier)</option>
+            <option value="expression">Expression (tête)</option>
+          </select>
+          <input id="imp-name" type="text" placeholder="nom (ex. marche-2)" autocapitalize="off" />
+        </div>
+        <div class="form-row">
+          <input id="imp-file" type="file" accept="image/*" />
+          <button id="imp-go" class="primary">Importer</button>
+        </div>
+        <h3>Épisode</h3>
+        <div class="form-row">
+          <label class="filebtn">Ouvrir un épisode (.json)<input id="ep-file" type="file" accept=".json,application/json" hidden /></label>
+          <button id="ep-export">Exporter l'épisode</button>
+        </div>
+        <h3>Journal de chargement</h3>
+        <ul id="asset-log" class="list compact log"></ul>
+      </div>
+
+      <div id="tab-audio" class="tab">
+        <div class="form-row">
+          <label class="filebtn">Importer un son<input id="snd-file" type="file" accept="audio/*" hidden /></label>
+        </div>
+        <ul id="sound-list" class="list compact"></ul>
+      </div>
+
+      <div id="tab-settings" class="tab">
+        <label class="field">Qualité de l'aperçu
+          <select id="set-preview">
+            <option value="0.333">360×640 (téléphone lent)</option>
+            <option value="0.5" selected>540×960</option>
+            <option value="0.75">810×1440</option>
+            <option value="1">1080×1920</option>
+          </select>
+        </label>
+        <label class="field">Qualité d'enregistrement
+          <select id="set-export">
+            <option value="0.6667">720×1280 (recommandé sur téléphone)</option>
+            <option value="1">1080×1920</option>
+          </select>
+        </label>
+        <label class="check"><input id="set-guides" type="checkbox" /> Afficher les zones TikTok/Shorts et les repères</label>
+        <label class="check"><input id="set-loop" type="checkbox" /> Lecture en boucle</label>
+        <p id="support" class="label"></p>
+      </div>
+    </section>
   </main>
-  <script type="module" src="/src/main.js"></script>
+
+  <dialog id="export-dialog">
+    <h3>Vidéo enregistrée</h3>
+    <video id="export-video" controls playsinline></video>
+    <p id="export-info" class="label"></p>
+    <div class="form-row">
+      <a id="export-link" class="button primary" download>Télécharger</a>
+      <button id="export-close">Fermer</button>
+    </div>
+  </dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+
+  <script type="module" src="src/app.js"></script>
 </body>
 </html>

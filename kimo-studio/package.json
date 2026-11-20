@@ -1,15 +1,12 @@
 {
   "name": "kimo-studio",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.2.0",
+  "description": "Studio d'animation 2D KIMO — HTML, CSS, JavaScript, Canvas. Aucune dépendance.",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
+    "start": "python3 -m http.server 8080",
+    "check": "node tools/verifier.mjs",
     "decouper": "sh tools/decouper-tout.sh"
-  },
-  "devDependencies": {
-    "vite": "5.4.11"
   }
 }

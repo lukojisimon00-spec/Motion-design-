@@ -1,0 +1,89 @@
+{
+  "title": "KIMO — démo du moteur",
+  "fps": 30,
+  "music": { "sound": "musique", "volume": 0.3 },
+  "scenes": [
+    {
+      "id": "arrivee",
+      "title": "KIMO arrive",
+      "duration": 4.5,
+      "background": "rue",
+      "camera": { "x": 540, "y": 960, "zoom": 1 },
+      "actors": [
+        { "id": "kimo", "character": "kimo", "x": -40, "y": 1640, "height": 820, "pose": "debout", "expression": "neutre" }
+      ],
+      "actions": [
+        { "at": 0, "type": "walk", "target": "kimo", "to": [540, 1640], "duration": 3 },
+        { "at": 0, "type": "camera", "zoom": 1.12, "to": [540, 1180], "duration": 4.5, "ease": "inOut" },
+        { "at": 3, "type": "expression", "target": "kimo", "value": "sourire" },
+        { "at": 3, "type": "squash", "target": "kimo", "amount": 0.06, "duration": 0.35 }
+      ],
+      "sounds": [
+        { "at": 0, "sound": "whoosh", "volume": 0.7 },
+        { "at": 0.3, "sound": "pas", "volume": 0.5 }, { "at": 0.85, "sound": "pas", "volume": 0.5 },
+        { "at": 1.4, "sound": "pas", "volume": 0.5 }, { "at": 1.95, "sound": "pas", "volume": 0.5 },
+        { "at": 2.5, "sound": "pas", "volume": 0.5 },
+        { "at": 3, "sound": "pop", "volume": 0.8 }
+      ]
+    },
+    {
+      "id": "surprise",
+      "title": "La surprise",
+      "duration": 3,
+      "background": "rue",
+      "camera": { "x": 540, "y": 1180, "zoom": 1.12 },
+      "actors": [
+        { "id": "kimo", "character": "kimo", "x": 540, "y": 1640, "height": 820, "pose": "debout", "expression": "sourire" }
+      ],
+      "actions": [
+        { "at": 0.5, "type": "pose", "target": "kimo", "value": "recul-surpris" },
+        { "at": 0.5, "type": "expression", "target": "kimo", "value": "horrifie" },
+        { "at": 0.5, "type": "camera", "zoom": 1.75, "to": [560, 1020], "duration": 0.5, "ease": "back" },
+        { "at": 0.5, "type": "cameraShake", "amount": 16, "duration": 0.6 },
+        { "at": 1.8, "type": "expression", "target": "kimo", "value": "surpris-sueur" }
+      ],
+      "sounds": [ { "at": 0.5, "sound": "boing", "volume": 0.9 } ]
+    },
+    {
+      "id": "reflexion",
+      "title": "Il réfléchit",
+      "duration": 3.5,
+      "background": "chambre",
+      "camera": { "x": 540, "y": 1180, "zoom": 1.1 },
+      "actors": [
+        { "id": "kimo", "character": "kimo", "x": 700, "y": 1700, "height": 860, "pose": "bras-croises", "expression": "reflexion", "facing": "left" }
+      ],
+      "actions": [
+        { "at": 1.2, "type": "expression", "target": "kimo", "value": "blase" },
+        { "at": 2.2, "type": "pose", "target": "kimo", "value": "pointe-du-doigt" },
+        { "at": 2.2, "type": "face", "target": "kimo", "value": "right" },
+        { "at": 2.2, "type": "expression", "target": "kimo", "value": "fier" },
+        { "at": 2.2, "type": "squash", "target": "kimo", "amount": 0.08, "duration": 0.3 },
+        { "at": 2.2, "type": "camera", "zoom": 1.25, "to": [620, 1150], "duration": 0.4, "ease": "out" }
+      ],
+      "sounds": [ { "at": 0, "sound": "whoosh", "volume": 0.6 }, { "at": 2.2, "sound": "pop", "volume": 0.9 } ]
+    },
+    {
+      "id": "victoire",
+      "title": "Victoire !",
+      "duration": 4,
+      "background": "rue",
+      "camera": { "x": 540, "y": 1180, "zoom": 1.05 },
+      "actors": [
+        { "id": "kimo", "character": "kimo", "x": 540, "y": 1640, "height": 820, "pose": "debout", "expression": "rire" }
+      ],
+      "actions": [
+        { "at": 0.3, "type": "jump", "target": "kimo", "height": 260, "duration": 0.8, "pose": "saut-victoire", "thenPose": "celebration" },
+        { "at": 1.1, "type": "squash", "target": "kimo", "amount": 0.12, "duration": 0.3 },
+        { "at": 1.1, "type": "cameraShake", "amount": 10, "duration": 0.4 },
+        { "at": 2.4, "type": "pose", "target": "kimo", "value": "debout" },
+        { "at": 2.6, "type": "walk", "target": "kimo", "to": [1500, 1640], "duration": 1.2, "cycle": "course" },
+        { "at": 2.6, "type": "camera", "zoom": 1, "to": [540, 960], "duration": 1.2 }
+      ],
+      "sounds": [
+        { "at": 0.3, "sound": "whoosh", "volume": 0.6 }, { "at": 1.1, "sound": "ching", "volume": 0.8 },
+        { "at": 2.6, "sound": "whoosh", "volume": 0.8 }
+      ]
+    }
+  ]
+}

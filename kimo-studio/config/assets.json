@@ -1,0 +1,252 @@
+{
+  "version": 1,
+  "basePath": "public/",
+  "backgrounds": {
+    "rue": {
+      "src": "backgrounds/rue.svg",
+      "color": "#f9e7c4"
+    },
+    "chambre": {
+      "src": "backgrounds/chambre.svg",
+      "color": "#f1e3cf"
+    },
+    "studio": {
+      "color": "#f6f6f3"
+    }
+  },
+  "characters": {
+    "kimo": {
+      "name": "KIMO",
+      "heightRef": 362,
+      "facing": "right",
+      "defaultPose": "debout",
+      "poses": {
+        "debout": {
+          "src": "characters/kimo/poses/debout.png",
+          "anchor": [
+            0.504,
+            1
+          ],
+          "head": {
+            "x": 67,
+            "y": 11,
+            "scale": 0.58
+          }
+        },
+        "marche": {
+          "src": "characters/kimo/poses/marche.png",
+          "anchor": [
+            0.484,
+            1
+          ],
+          "head": {
+            "x": 91,
+            "y": 11,
+            "scale": 0.58
+          }
+        },
+        "bras-croises": {
+          "src": "characters/kimo/poses/bras-croises.png",
+          "anchor": [
+            0.424,
+            1
+          ],
+          "head": {
+            "x": 55.5,
+            "y": 12,
+            "scale": 0.58
+          }
+        },
+        "pointe-du-doigt": {
+          "src": "characters/kimo/poses/pointe-du-doigt.png",
+          "anchor": [
+            0.32,
+            1
+          ],
+          "head": {
+            "x": 73,
+            "y": 12,
+            "scale": 0.58
+          }
+        },
+        "course": {
+          "src": "characters/kimo/poses/course.png",
+          "anchor": [
+            0.661,
+            1
+          ],
+          "head": {
+            "x": 172.5,
+            "y": 12,
+            "scale": 0.58
+          }
+        },
+        "recul-surpris": {
+          "src": "characters/kimo/poses/recul-surpris.png",
+          "anchor": [
+            0.492,
+            1
+          ],
+          "head": {
+            "x": 118.5,
+            "y": 12,
+            "scale": 0.58
+          }
+        },
+        "accroupi-elan": {
+          "src": "characters/kimo/poses/accroupi-elan.png",
+          "anchor": [
+            0.735,
+            1
+          ],
+          "head": {
+            "x": 159.5,
+            "y": 12,
+            "scale": 0.58
+          }
+        },
+        "assis": {
+          "src": "characters/kimo/poses/assis.png",
+          "anchor": [
+            0.315,
+            1
+          ],
+          "head": {
+            "x": 62,
+            "y": 12,
+            "scale": 0.58
+          }
+        },
+        "assis-explique": {
+          "src": "characters/kimo/poses/assis-explique.png",
+          "anchor": [
+            0.304,
+            1
+          ],
+          "head": {
+            "x": 65,
+            "y": 12,
+            "scale": 0.58
+          }
+        },
+        "celebration": {
+          "src": "characters/kimo/poses/celebration.png",
+          "anchor": [
+            0.498,
+            1
+          ]
+        },
+        "saut-victoire": {
+          "src": "characters/kimo/poses/saut-victoire.png",
+          "anchor": [
+            0.498,
+            1
+          ]
+        },
+        "panique-mains-tete": {
+          "src": "characters/kimo/poses/panique-mains-tete.png",
+          "anchor": [
+            0.508,
+            1
+          ]
+        }
+      },
+      "expressionHead": {
+        "x": 90,
+        "y": 11,
+        "clipBottom": 205
+      },
+      "expressions": {
+        "neutre": {
+          "src": "characters/kimo/expressions/b/neutre.png"
+        },
+        "sourire": {
+          "src": "characters/kimo/expressions/b/sourire.png"
+        },
+        "rire": {
+          "src": "characters/kimo/expressions/b/rire.png"
+        },
+        "serein": {
+          "src": "characters/kimo/expressions/b/serein.png"
+        },
+        "surpris-sueur": {
+          "src": "characters/kimo/expressions/b/surpris-sueur.png"
+        },
+        "inquiet": {
+          "src": "characters/kimo/expressions/b/inquiet.png"
+        },
+        "etonne": {
+          "src": "characters/kimo/expressions/b/etonne.png"
+        },
+        "horrifie": {
+          "src": "characters/kimo/expressions/b/horrifie.png"
+        },
+        "reflexion": {
+          "src": "characters/kimo/expressions/b/reflexion.png"
+        },
+        "blase": {
+          "src": "characters/kimo/expressions/b/blase.png"
+        },
+        "colere": {
+          "src": "characters/kimo/expressions/b/colere.png"
+        },
+        "fatigue": {
+          "src": "characters/kimo/expressions/b/fatigue.png"
+        },
+        "panique": {
+          "src": "characters/kimo/expressions/b/panique.png"
+        },
+        "triste": {
+          "src": "characters/kimo/expressions/b/triste.png"
+        },
+        "pleure": {
+          "src": "characters/kimo/expressions/b/pleure.png"
+        },
+        "fier": {
+          "src": "characters/kimo/expressions/b/fier.png"
+        },
+        "yeux-au-ciel": {
+          "src": "characters/kimo/expressions/b/yeux-au-ciel.png"
+        }
+      },
+      "cycles": {
+        "marche": {
+          "frames": [
+            "marche",
+            "debout"
+          ],
+          "fps": 3.6,
+          "bob": 14
+        },
+        "course": {
+          "frames": [
+            "course",
+            "accroupi-elan"
+          ],
+          "fps": 6,
+          "bob": 26
+        }
+      }
+    }
+  },
+  "sounds": {
+    "pop": {
+      "src": "audio/sfx/pop.wav"
+    },
+    "whoosh": {
+      "src": "audio/sfx/whoosh.wav"
+    },
+    "boing": {
+      "src": "audio/sfx/boing.wav"
+    },
+    "ching": {
+      "src": "audio/sfx/ching.wav"
+    },
+    "pas": {
+      "src": "audio/sfx/pas.wav"
+    },
+    "musique": {
+      "src": "audio/music/boucle-112bpm.mp3"
+    }
+  }
+}
